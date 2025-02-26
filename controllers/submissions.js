@@ -79,7 +79,6 @@ const updateSubmission = async (req, res) => {
     delete req.body._id;
     const update = { $set: req.body };
 
-    console.log(update);
     await collection.updateOne(query, update);
 
     res.status(200).json({ message: "Submission updated successfully" });
