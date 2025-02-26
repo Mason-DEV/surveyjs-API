@@ -1,0 +1,7 @@
+const MONGO_CONFIG = {
+  DB_NAME: process.env.MONGO_DB_NAME,
+  COLLECTION_FORM: process.env.MONGO_FORMS_COLLECTION,
+  COLLECTION_SUBMISSION: process.env.MONGO_SUBMISSION_COLLECTION,
+};
+
+module.exports = { MONGO_CONFIG };
